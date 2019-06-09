@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		C049D8D922AD6567006CF314 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C049D8D822AD6567006CF314 /* AppDelegate.swift */; };
-		C049D8DB22AD6567006CF314 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C049D8DA22AD6567006CF314 /* ViewController.swift */; };
 		C049D8DE22AD6567006CF314 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C049D8DC22AD6567006CF314 /* Main.storyboard */; };
 		C049D8E022AD6569006CF314 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C049D8DF22AD6569006CF314 /* Assets.xcassets */; };
 		C049D8E322AD6569006CF314 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C049D8E122AD6569006CF314 /* LaunchScreen.storyboard */; };
+		C049D8EB22AD6762006CF314 /* StopWatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C049D8EA22AD6762006CF314 /* StopWatchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C049D8D522AD6567006CF314 /* StopWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StopWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C049D8D822AD6567006CF314 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C049D8DA22AD6567006CF314 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C049D8DD22AD6567006CF314 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C049D8DF22AD6569006CF314 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C049D8E222AD6569006CF314 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C049D8E422AD6569006CF314 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C049D8EA22AD6762006CF314 /* StopWatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +55,11 @@
 			isa = PBXGroup;
 			children = (
 				C049D8D822AD6567006CF314 /* AppDelegate.swift */,
-				C049D8DA22AD6567006CF314 /* ViewController.swift */,
 				C049D8DC22AD6567006CF314 /* Main.storyboard */,
 				C049D8DF22AD6569006CF314 /* Assets.xcassets */,
 				C049D8E122AD6569006CF314 /* LaunchScreen.storyboard */,
 				C049D8E422AD6569006CF314 /* Info.plist */,
+				C049D8EA22AD6762006CF314 /* StopWatchViewController.swift */,
 			);
 			path = StopWatch;
 			sourceTree = "<group>";
@@ -135,7 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C049D8DB22AD6567006CF314 /* ViewController.swift in Sources */,
+				C049D8EB22AD6762006CF314 /* StopWatchViewController.swift in Sources */,
 				C049D8D922AD6567006CF314 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

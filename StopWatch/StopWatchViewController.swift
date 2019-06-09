@@ -24,11 +24,16 @@ class StopWatchViewController: UIViewController
     override func viewDidLoad() {
         super.viewDidLoad();
         resetButton.isEnabled = false;
+        resetButton.alpha = 0.5;
         pauseButton.isEnabled = false;
+        pauseButton.alpha = 0.5;
         
         resetButton.layer.cornerRadius = 10;
-        pauseButton.layer.cornerRadius = 10;
-        startButton.layer.cornerRadius = 10;
+        pauseButton.layer.cornerRadius = pauseButton.bounds.width/2.0;
+        startButton.layer.cornerRadius = startButton.bounds.width/2.0;
+        startButton.layer.borderWidth = 2;
+        pauseButton.layer.borderWidth = 2;
+        
     }
     
     @IBAction func resetDidTap(_ sender: Any) {
@@ -38,8 +43,11 @@ class StopWatchViewController: UIViewController
         timerLabel.text = "00:00:00.0";
         
         resetButton.isEnabled = false;
+        resetButton.alpha = 0.5;
         pauseButton.isEnabled = false;
+        pauseButton.alpha = 0.5;
         startButton.isEnabled = true;
+        startButton.alpha = 1.0;
         
     }
     
@@ -50,8 +58,11 @@ class StopWatchViewController: UIViewController
             isTimerRunning = true;
             
             resetButton.isEnabled = true;
+            resetButton.alpha = 1.0;
             pauseButton.isEnabled = true;
+            pauseButton.alpha = 1.0;
             startButton.isEnabled = false;
+            startButton.alpha = 0.5;
             
         }
     }
@@ -59,8 +70,11 @@ class StopWatchViewController: UIViewController
     
     @IBAction func pauseDidTap(_ sender: Any) {
         resetButton.isEnabled = true;
+        resetButton.alpha = 1.0;
         startButton.isEnabled = true;
+        startButton.alpha = 1.0;
         pauseButton.isEnabled = false;
+        pauseButton.alpha = 0.5;
         
         isTimerRunning = false;
         timer.invalidate();
